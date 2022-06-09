@@ -25,3 +25,5 @@ Mô hình gồm 4 giai đoạn chính:
 **Source code này sẽ thực hiện 2 công đoạn trong 4 công đoạn trên là: Wasm module auto-collector và Preprocessor**
 ## Thực hiện
 ### Wasm module auto-collector
+Thực hiện tìm kiếm và thu thập Web assembly module từ các trang web cho trước, tạo thư mục lưu trữ và lưu các module đó thành từng file trong thư mục đã tạo.
+
