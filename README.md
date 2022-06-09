@@ -26,7 +26,14 @@ Mô hình gồm 4 giai đoạn chính:
 ## Thực hiện
 ### Wasm module auto-collector
 Thực hiện tìm kiếm và thu thập Web assembly module từ các trang web cho trước, tạo thư mục lưu trữ và lưu các module đó thành từng file trong thư mục đã tạo.
-thực hiện thu thập
+#### Yêu cầu:
+1. Cài đặt NodeJS và npm
+2. Chạy lệnh <code>npm install</code> để cài đặt các dependencies
+3. Thực hiện thu thập bằng lệnh: 
 ~~~bash
-node main.js
+node main.js list.txt
 ~~~
+
+Trong đó list.txt là danh sách các trang web.
+
+Nếu thu thập được wasm-module từ trang web thì một thu mục **wasm/** sẽ được tạo kèm theo thư mục con chứa file WebAssembly (wasm) binary module.
