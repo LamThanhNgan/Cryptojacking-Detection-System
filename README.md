@@ -11,3 +11,17 @@ o	Toolchain đc sử dụng rộng rãi để biên dịch C/C++ thành Wasm là
 o	Tốc độ gần như nguyên bản của Wasm do các modules đc tối ưu hóa trong quá trình biên dịch và việc quản lí bộ nhớ đc thực hiện mà k cần sử dụng garbage collector
 
 Project của nhóm thực hiện nghiên cứu hệ thống phát hiện Cryptojacking trên thời gian thực.
+
+### Mô hình phát hiện cryptojacking malware
+
+![image](https://user-images.githubusercontent.com/60861471/172760533-1a619601-52d1-4a85-ae02-713beb2dd524.png)
+ 
+Mô hình gồm 4 giai đoạn chính:
+- **Wasm module auto-collector:** bộ thu module tự động, khi ng dùng đang sd trình duyệt web thì nó sẽ chạy liên tục trong nền, kiểm tra xem các web đang đc truy cập này có đang tạo ra bất kì tệp nhị phân Wasm nào không, nếu có thì tự động tải và trích xuất tệp nhị phân Wasm đc liên kết vào 1 folder đc chỉ định (chỉ tải Wasm binaries và không tải bất kì thành phần trang web khác, nếu có nhiều hơn 1 module Wasm thì tải xuống toàn bộ)
+- **Preprocessor:** bộ tiền xử lí, nó sẽ đọc các folder đc tải xuống trc đó và chuyển đổi từng tệp nhị phân trong folder thành hình ảnh gray-scale và tiếp tục xử lí trước hình ảnh này thành 1 dạng mà mạng nơ-ron có thể sử dụng làm đầu vào (thay đổi kích thước nó thành kích thước chung). Preprocessor chuyển đổi nhị phân thành 1 mảng các số nguyên với mỗi số nguyên đại diện cho một pixel của gray-scale, sau đó chuẩn hóa và định hình (normalizes and reshapes) lại mảng kết quả rồi chuyển qua Wasm classifier
+- **Wasm classifier:** bộ phân loại wasm, các mã nhị phân đã chuyển đổi đc đưa vào đây, một CNN đc đào tạo trước sẽ phân loại từng tệp nhị phân đc xử lí trc đó là độc hại hay lành tính
+- **Notifier:** bộ thông báo, dựa vào kết quả phân loại trên sẽ quyết định có thông báo ng dùng về hd khai thác độc hại hay không. Nếu phát hiện là độc hại thì sẽ thông báo ng dùng trang web mà họ đang truy cập sử dụng tài nguyên tính toán của họ để khai thác tiền điện tử và họ nên đóng nó và chấm dứt mọi quy trình khai thác chạy trong nền. Nếu đó là tệp nhị phân lành tính thì sẽ ko thông báo làm gián đoạn ng dùng, và Wasm Module Auto-collector sẽ tiếp tục kiểm tra việc khởi tạo Wasm module 
+
+**Source code này sẽ thực hiện 2 công đoạn trong 4 công đoạn trên là: Wasm module auto-collector và Preprocessor**
+## Thực hiện
+### Wasm module auto-collector
