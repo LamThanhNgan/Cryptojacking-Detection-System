@@ -42,4 +42,6 @@ Nếu thu thập được wasm-module từ trang web thì một thu mục **wasm
 
 ![Screenshot 2022-06-09 113722](https://user-images.githubusercontent.com/60861471/172765247-3baf205f-364d-4f9c-a40f-04d03b923823.png)
 
+![2](https://user-images.githubusercontent.com/60861471/172765708-3d471223-25b1-4a83-9818-220deb79081e.png)
+
 
