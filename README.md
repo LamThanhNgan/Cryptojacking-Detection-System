@@ -37,3 +37,9 @@ node main.js list.txt
 Trong đó list.txt là danh sách các trang web.
 
 Nếu thu thập được wasm-module từ trang web thì một thu mục **wasm/** sẽ được tạo kèm theo thư mục con chứa file WebAssembly (wasm) binary module.
+
+**Kết quả:**
+
+![Screenshot 2022-06-09 113722](https://user-images.githubusercontent.com/60861471/172765247-3baf205f-364d-4f9c-a40f-04d03b923823.png)
+
+
