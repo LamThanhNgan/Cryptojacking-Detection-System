@@ -55,3 +55,4 @@ python scale-gray-image.py <số folder được tạo ra ở bước thu thập
 
 ![5](https://user-images.githubusercontent.com/60861471/172768096-7979a239-f108-47a4-8d6c-2b954b3972be.png)
 
+![image](https://user-images.githubusercontent.com/60861471/172768260-923a7ba2-ee8b-49aa-9121-5674879e0493.png)
