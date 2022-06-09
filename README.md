@@ -44,4 +44,5 @@ Nếu thu thập được wasm-module từ trang web thì một thu mục **wasm
 
 ![2](https://user-images.githubusercontent.com/60861471/172765708-3d471223-25b1-4a83-9818-220deb79081e.png)
 
+![3](https://user-images.githubusercontent.com/60861471/172765966-da785733-88f5-4c37-b207-93a5b914167e.png)
 
