@@ -26,4 +26,7 @@ Mô hình gồm 4 giai đoạn chính:
 ## Thực hiện
 ### Wasm module auto-collector
 Thực hiện tìm kiếm và thu thập Web assembly module từ các trang web cho trước, tạo thư mục lưu trữ và lưu các module đó thành từng file trong thư mục đã tạo.
-
+thực hiện thu thập
+~~~bash
+node main.js
+~~~
