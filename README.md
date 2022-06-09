@@ -46,3 +46,9 @@ Nếu thu thập được wasm-module từ trang web thì một thu mục **wasm
 
 ![3](https://user-images.githubusercontent.com/60861471/172765966-da785733-88f5-4c37-b207-93a5b914167e.png)
 
+### Preprocessor
+Thực hiện chuyển đổi wasm-module trong các folder thành gray-scale imange, sau đó thực hiện normalizes và reshapes thành 1 dạng mà mạng nơ-ron có thể sử dụng làm đầu vào (hình ảnh 4D).
+
+~~~bash
+python scale-gray-image.py <số folder được tạo ra ở bước thu thập>
+~~~
