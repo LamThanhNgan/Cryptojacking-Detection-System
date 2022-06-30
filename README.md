@@ -63,5 +63,5 @@ python scale-gray-image.py <số folder được tạo ra ở bước thu thập
 
 ## Reference
 - **Paper**:
-1. Touati, L., Challal, Y., & Bouabdallah, A. (2014, June). C-cp-abe: Cooperative ciphertext policy attribute-based encryption for the internet of things. In 2014 International Conference on Advanced Networking Distributed Systems and Applications (pp. 64-69). IEEE.
-2. Bethencourt, J., Sahai, A., & Waters, B. (2007, May). Ciphertext-policy attribute-based encryption. In 2007 IEEE symposium on security and privacy (SP'07) (pp. 321-334). IEEE.
+1. Naseem, Faraz, Aris, Ahmet, Babun, Leonardo et al. (2021). MINOS*: A Lightweight Real-Time Cryptojacking Detection System . 10.14722/ndss.2021.24444
+2. [abc](https://github.com/m4riuz/wasm-collector)
