@@ -60,3 +60,8 @@ python scale-gray-image.py <số folder được tạo ra ở bước thu thập
 **Kết quả**
 
 ![image](https://user-images.githubusercontent.com/60861471/172768414-29f326c9-0926-4f9a-9e49-b8e3c0828bad.png)
+
+## Reference
+- **Paper**:
+1. Touati, L., Challal, Y., & Bouabdallah, A. (2014, June). C-cp-abe: Cooperative ciphertext policy attribute-based encryption for the internet of things. In 2014 International Conference on Advanced Networking Distributed Systems and Applications (pp. 64-69). IEEE.
+2. Bethencourt, J., Sahai, A., & Waters, B. (2007, May). Ciphertext-policy attribute-based encryption. In 2007 IEEE symposium on security and privacy (SP'07) (pp. 321-334). IEEE.
