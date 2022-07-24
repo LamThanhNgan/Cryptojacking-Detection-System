@@ -64,4 +64,4 @@ python scale-gray-image.py <số folder được tạo ra ở bước thu thập
 ## Reference
 - **Paper**:
 1. Naseem, Faraz, Aris, Ahmet, Babun, Leonardo et al. (2021). MINOS*: A Lightweight Real-Time Cryptojacking Detection System . 10.14722/ndss.2021.24444
-2. [abc](https://github.com/m4riuz/wasm-collector)
+2. [Wasm Extractor](https://github.com/m4riuz/wasm-collector)
